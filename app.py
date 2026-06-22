@@ -2,9 +2,7 @@ import streamlit as st
 import numpy as np
 import plotly.graph_objects as go
 
-# ==========================
-# FUNGSI KEANGGOTAAN
-# ==========================
+# Deklarasi FUngsi anggota
 
 def left_shoulder(x, a, b):
     if x <= a:
@@ -33,9 +31,7 @@ def triangle(x, a, b, c):
         return (c - x) / (c - b)
 
 
-# ==========================
-# KASUS 1
-# ==========================
+# Hitung Nilai
 
 def hitung_mahasiswa(nilai):
 
@@ -95,11 +91,7 @@ def grafik_mahasiswa():
 
     return fig
 
-
-# ==========================
-# KASUS 2
-# ==========================
-
+# Hitung Beasiswa
 def hitung_beasiswa(ipk):
 
     tidak_layak = left_shoulder(ipk, 1.5, 2.5)
